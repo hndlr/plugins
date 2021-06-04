@@ -1,0 +1,32 @@
+{
+  "name": "@hndlr/plugin-elasticsearch",
+  "version": "0.0.1-beta.1",
+  "description": "Elasticsearch error handler",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit ./test.js",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test",
+    "lint": "npx standard ./index.js --fix"
+  },
+  "mocha": {
+    "ui": "bdd",
+    "reporter": "dot"
+  },
+  "keywords": [
+    "express",
+    "error",
+    "elasticsearch"
+  ],
+  "author": "Harry Wright",
+  "license": "ISC",
+  "dependencies": {
+    "@hndlr/errors": "0.0.1-beta.2"
+  },
+  "devDependencies": {
+    "@elastic/elasticsearch": "^7.13.0",
+    "@elastic/elasticsearch-mock": "^0.3.0",
+    "mocha": "^8.4.0",
+    "chai": "^4.3.4",
+    "nyc": "^15.0.0"
+  }
+}

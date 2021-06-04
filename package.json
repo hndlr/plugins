@@ -1,0 +1,15 @@
+{
+  "name": "@hndlr/plugins",
+  "version": "0.0.1-beta.2",
+  "description": "Express error handling plugins ofr @hndlr/erred",
+  "main": "index.js",
+  "keywords": [
+    "express",
+    "error"
+  ],
+  "author": "Harry Wright",
+  "license": "ISC",
+  "workspaces": [
+    "plugins/plugin-elasticsearch"
+  ]
+}
